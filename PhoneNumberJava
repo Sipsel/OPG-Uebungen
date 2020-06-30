@@ -1,0 +1,56 @@
+public class PhoneNumber {
+
+    private String laenderVW, netzVW, nr;
+
+    public PhoneNumber()
+    {
+        laenderVW = "+49";
+        netzVW = "0151";
+        nr = "1234567";
+    }
+    public PhoneNumber(String lVW, String nVW, String nr)
+    {
+        laenderVW = lVW;
+        netzVW = nVW;
+        this.nr = nr;
+    }
+
+    public String getLaenderVW() {
+        return laenderVW;
+    }
+
+    public String getNetzVW() {
+        return netzVW;
+    }
+
+    public String getNr() {
+        return nr;
+    }
+
+    public void setLaenderVW(String laenderVW) {
+        this.laenderVW = laenderVW;
+    }
+
+    public void setNetzVW(String netzVW) {
+        this.netzVW = netzVW;
+    }
+
+    public void setNr(String nr) {
+        this.nr = nr;
+    }
+
+    public void ausgabe(int x)
+    {
+        if(x == 0)
+        {
+            System.out.println(getNetzVW() + " " + getNr());
+        }else if (x == 1)
+        {
+            System.out.println(getLaenderVW() + " " + getNetzVW().substring(1,getNetzVW().length()) + " " + getNr());
+        }
+    }
+    public boolean equals(String nr2)
+    {
+        return getNr().equals(nr2);
+    }
+}
