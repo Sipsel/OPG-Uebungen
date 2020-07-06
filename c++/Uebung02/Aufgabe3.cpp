@@ -1,6 +1,6 @@
-#import <iostream>
-#import <cstring>
-#import <cstdlib>
+#include <iostream>
+#include <cstring>
+#include <cstdlib>
 using namespace std;
 class Anschrift
 {
@@ -13,7 +13,7 @@ class Anschrift
 
    public:
       Anschrift();
-      Anschrift(char*,char*,char*,char* = "51465",char* = "Bergisch Gladbach");
+      Anschrift(char const*,char const*,char const*,char const* = "51465",char const * = "Bergisch Gladbach");
                 
       const char * getStrasse() const;
       const char * getHausnr() const;
@@ -31,7 +31,7 @@ Anschrift::Anschrift()
     strcpy(ort,"XXX");
     strcpy(telnr,"XXX");
 }
-Anschrift::Anschrift(char* a, char* b, char* c, char* d, char* e)
+Anschrift::Anschrift(char const* a, char const * b, char const * c, char const * d, char const* e)
 {
     strcpy(strasse, a);
     strcpy(hausnr,b);
