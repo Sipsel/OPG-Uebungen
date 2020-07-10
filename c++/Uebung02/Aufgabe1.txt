@@ -1,0 +1,41 @@
+Übung 2-1
+
+1. Wozu dienen die Schutzbereiche private und public im Rahmen der objektorientierten Programmierung?
+
+Mit den Schlüsselwörtern public und private wird festgelegt, von wo aus auf eine Eigenschaft und Methode einer Klasse zugegriffen werden kann.
+Auf jene, die als public deklariert werden, kann von überall aus zugegriffen werden, sie sind also öffentlich verfügbar.
+Private deklariere Eigenschaften oder Methoden lassen sich nur innerhalb der Klasse ansprechen, also nur innerhalb von Methoden derselben Klasse.
+
+2. Was ist der Unterschied zwischen einer Klasse und einem Objekt?
+
+Eine Klasse ist eine allgemeine Beschreibung eines Datentyps (z.B. "Auto" oder "Mensch) mit allen wichtigen Funktionalitäten (Methoden, Membervariablen etc.)
+Ein Objekt ist ein konkreter Gegenstand, der einer bestimmten Klasse angehört ("mein Skoda") - wie das Objekt prinzipiell aufgebaut ist und was es kann,
+bestimmt seine Klasse.
+
+3. Wozu dient ein Konstruktor?
+
+Ein Konstruktor dient dazu beim Aufruf, ein Objekt korrekt zu initialisieren.
+
+4. Wieviele Konstruktoraufrufe durchläuft ein Objekt im Laufe seiner Lebensdauer?
+
+Ein Objekt durchläuft im Laufe seiner Lebensdauer 1 Konstruktoraufruf. Falls ein Dekonstruktor definiert wurde, wird diese vor Ende des Programms aufgerufen.
+
+5. Welche Konstruktoren besitzt jede C++-Klasse? Wie sieht dies in Java aus?
+
+Einen leeren Standardkonstruktor, falls vom Entwickler kein Konstruktor bereitgestellt wird.
+Auch in java wird eine parameterlose Default-Konstruktor aufgerufen, falls vom Entwickler kein Konstruktor bereitgestellt wird.
+
+6. Weshalb deklariert man in C++ bei einer get-Methode, die etwas vom Typ char * zurückliefert, üblicherweise den Rückgabetyp als const char *?
+   Wieso ist eine ähnliche Kennzeichnung bei der entsprechenden Java-Methode, die etwas vom Typ String zurückliefert, nicht erforderlich?
+
+Es wird vom Compiler überprüft, dass das Inhalte von Variablen nicht verändert werden.
+In Java sind Strings unveränderbar.
+
+7. Was besagt das nachgestellte const bei einer C++-Methode (innerhalb einer Klasse)?
+
+Es garantiert, dass die Methode das Objekt nicht verändert und somit auch auf konstante Objekte angewandt werden kann.
+
+8. Weshalb ist main() in Java eine static-Methode?
+
+Die main-Methode ist static, da sie aufgreufen wird ohne, dass vorher ein Objekt einer Klasse gebildet wurde.
+
