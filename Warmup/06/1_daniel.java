@@ -11,6 +11,10 @@ class Dozent
         this.name = a;
         this.kuerzel = b;
     }
+    public String toString()
+    {
+        return name;
+    }
 }
 class Vorlesung
 {
@@ -42,5 +46,6 @@ public class HelloWorld{
         Dozent doz = new Dozent("Seifert","Set");
         Vorlesung vorl = new Vorlesung("Statistik","STA",doz,"bfwx120a");
         System.out.println("Die Vorlesung: " + vorl);
+        
      }
 }
